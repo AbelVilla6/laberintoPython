@@ -1,3 +1,4 @@
+from Composite.ElementoMapa import ElementoMapa
 class Puerta(ElementoMapa):
 	def __init__(self):
 		self.abierta = True
@@ -12,3 +13,6 @@ class Puerta(ElementoMapa):
 			print("Puedes pasar al otro lado") 
 			return
 		print("La puerta está cerrada")
+
+	def __str__(self):
+		return "Una puerta"

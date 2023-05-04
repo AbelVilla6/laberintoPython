@@ -9,3 +9,6 @@ class Decorator(Hoja):
 	def decorar(self,elementoMapa):
 		self.componente = elementoMapa
 		
+	def entrar(self):
+		if self.componente is not None:
+			self.componente.entrar()

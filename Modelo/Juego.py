@@ -1,11 +1,11 @@
-from Modelo.Composite.Baúl import Baul
-from Modelo.Composite.Habitacion import Habitacion
-from Modelo.Composite.Laberinto import Laberinto
-from Modelo.Composite.Pared import Pared
-from Modelo.Composite.Puerta import Puerta
-from Modelo.Decorator.Bomba import Bomba
-from Modelo.Decorator.Espada import Espada
-from Modelo.Decorator.Fuego import Fuego
+from Composite.Baul import Baul
+from Composite.Habitacion import Habitacion
+from Composite.Laberinto import Laberinto
+from Composite.Pared import Pared
+from Composite.Puerta import Puerta
+from Decorator.Bomba import Bomba
+from Decorator.Espada import Espada
+from Decorator.Fuego import Fuego
 
 class Juego:
 	def __init__(self):
@@ -39,7 +39,9 @@ class Juego:
 		return habitacion
 
 	def crearLaberinto(self):
-		return Laberinto()
+		laberinto = Laberinto()
+		laberinto.num = "1"
+		return laberinto
 
 	def crearFuego(self):
 		return Fuego()
@@ -109,10 +111,16 @@ class Juego:
 		hab3.agregarHijo(baul3)
 
 		#Agragar habitaciones al laberinto
-		self.laberinto.agregarHabitacion(hab1)
-		self.laberinto.agregarHabitacion(hab2)
-		self.laberinto.agregarHabitacion(hab3)
-		self.laberinto.agregarHabitacion(hab4)
+		self.laberinto.agregarHijo(hab1)
+		self.laberinto.agregarHijo(hab2)
+		self.laberinto.agregarHijo(hab3)
+		self.laberinto.agregarHijo(hab4)
+
+	def imprimirLaberinto(self):
+		self.laberinto.recorrer(self.imprimir)
+	
+	def imprimir(self, string):
+		print(str(string))
 
 	def crearHabitacionEnLlamas(self, num):
 		hab = self.crearHabitacion(num)

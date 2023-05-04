@@ -7,3 +7,7 @@ class ElementoMapa(ABC):
 	@abstractmethod
 	def entrar():
 		pass
+
+	def recorrer(self,bloque):
+		bloque(self)
+		
