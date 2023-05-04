@@ -1,4 +1,4 @@
 - Autor: Abel Ortiz Villaescusa
 - Patrones: Composite & Decorator + Iterator
 - Versión Python 3.11
-- UML:
+- UML: https://github.com/AbelVilla6/laberintoPython/blob/main/Diagramas/LaberintoEntrega2.mdj
