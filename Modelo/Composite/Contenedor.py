@@ -25,3 +25,6 @@ class Contenedor(ElementoMapa, ABC):
 		for each in self.hijos:
 			each.recorrer(bloque)
 		
+	#Método para los test unitarios
+	def esContenderor(self):
+		return True

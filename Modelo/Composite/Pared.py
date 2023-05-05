@@ -5,3 +5,9 @@ class Pared(ElementoMapa):
 
 	def __str__(self):
 		return "Una pared"
+	
+	#Método para los test unitarios
+	def esPared(self):
+		return True
+	
+	

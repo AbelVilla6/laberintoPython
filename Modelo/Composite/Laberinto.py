@@ -10,5 +10,9 @@ class Laberinto(Contenedor):
 	def entrar(self):
 		print ("Estas jugnado en el laberinto")
 
+	#Método para los test unitarios
+	def esLaberinto(self):
+		return True
+
 
 

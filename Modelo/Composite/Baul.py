@@ -10,3 +10,7 @@ class Baul(Contenedor):
 	
 	def __str__(self):
 		return "Hay un baúl"
+	
+	#Método para los test unitarios
+	def esBaul(self):
+		return True

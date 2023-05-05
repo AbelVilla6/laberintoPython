@@ -10,4 +10,8 @@ class Fuego(Decorator):
 
 	def __str__(self):
 		return "Soy fuego y estoy decorando -> " + str(self.componente)
+	
+	#Método para los test unitarios
+	def esFuego(self):
+		return True
 		

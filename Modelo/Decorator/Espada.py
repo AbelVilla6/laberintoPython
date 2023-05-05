@@ -10,3 +10,7 @@ class Espada(Decorator):
 
 	def __str__(self):
 		return "Soy espada y estoy decorando -> " + str(self.componente)
+	
+	#Método para los test unitarios
+	def esEspada(self):
+		return True

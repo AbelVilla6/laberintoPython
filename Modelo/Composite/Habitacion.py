@@ -18,4 +18,8 @@ class Habitacion(Contenedor):
 	
 	def entrar(self):
 		print("Estás en la habitación" + str(self.num))
+
+	#Método para los test unitarios
+	def esHabitación(self):
+		return True
 	

@@ -10,3 +10,7 @@ class Bomba(Decorator):
 
 	def __str__(self):
 		return "Soy bomba y estoy decorando -> " + str(self.componente)
+	
+	#Método para los test unitarios
+	def esBomba(self):
+		return True

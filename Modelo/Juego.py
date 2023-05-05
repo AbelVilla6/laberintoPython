@@ -136,6 +136,9 @@ class Juego:
 		bomba.decorar(componente)
 		return bomba 
 
+	#Método para los test unitarios
+	def esJuego(self):
+		return True
 
 
     

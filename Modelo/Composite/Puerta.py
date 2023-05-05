@@ -16,3 +16,7 @@ class Puerta(ElementoMapa):
 
 	def __str__(self):
 		return "Una puerta"
+	
+	#Método para los test unitarios
+	def esPuerta(self):
+		return True

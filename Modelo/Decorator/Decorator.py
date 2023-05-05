@@ -12,3 +12,7 @@ class Decorator(Hoja):
 	def entrar(self):
 		if self.componente is not None:
 			self.componente.entrar()
+
+	#Método para los test unitarios
+	def esDecorator(self):
+		return True
